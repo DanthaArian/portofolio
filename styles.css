@@ -27,6 +27,7 @@ nav {
     font-weight: 600;
 }
 
+
 .logo span {
     color: #03eefa;
 }
@@ -45,6 +46,7 @@ nav {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.5s;
+    font-weight: 600;
 }
 
 .navbar ul li a:hover {
@@ -74,6 +76,7 @@ nav {
 
 #contact {
     background: #073362;
+    height: auto;
 }
 
 .section h2 {
@@ -110,9 +113,9 @@ nav {
 }
 
 #project h2 {
+    width: 100%;
     font-size: 36px;
-    margin-bottom: 20px;
-    margin-right: 50%;
+    text-align: left;
     color: #073362;
 }
 
@@ -143,8 +146,8 @@ nav {
 
 #skill h2 {
     font-size: 36px;
-    margin-bottom: 20px;
-    margin-right: 60%;
+    text-align: left;
+    width: 100%; /*biar lebar nya pol*/
     color: #073362;
 }
 
@@ -158,6 +161,7 @@ nav {
     max-width: 20%;
     height: auto;
     border-radius: 8px;
+    position: relative;
 }
 
 /* Styles for the contact information */
@@ -183,16 +187,16 @@ nav {
     border-radius: 20px;
     width: 250px;
     height: 60px;
-    color: #ffffff;
-    border: 2px solid #020202;
-    background: #176569;
-
+    color: #000000;
+    border: 2px solid #ffffff;
+    background: #ffffff;
     font-size: 18px;
     cursor: pointer;
     transition: background 0.5s, color 0.5s;
 }
 
 .cv-button:hover {
+    border: 2px solid #03eefa;
     background: #03eefa;
     color: #ffffff;
 }
@@ -219,6 +223,25 @@ nav {
     height: auto;
 }
 
+
+
+.section a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+
+.social-logo {
+    width: 30px; /* Lebar gambar logo */
+    height: auto; /* Tinggi gambar logo */
+    margin-right: none; /* Jarak antara logo dan teks */
+    vertical-align: middle; /* Menyelaraskan logo dengan teks */
+}
+
 /* Media queries untuk penyesuaian pada layar yang lebih kecil */
 @media (max-width: 768px) {
     .cercle {
@@ -234,23 +257,91 @@ nav {
     }
 }
 
+@media (max-width: 600px) {
+    .navbar ul li {
+        margin-left: 15px;
+    }
 
-.section a {
-    color: #1da1f2;
-    text-decoration: none;
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 18px; /* Ukuran font lebih kecil */
+   
+    }
+
+    #about h2 {
+        font-size: 24px;
+    }
+
+    #about p,
+    #project p,
+    #skill p{
+        width: 100%; /* Buat paragraf mengambil lebar penuh */
+        margin: 10px 0 20px; /* Margin atas/bawah disesuaikan */
+        line-height: 1.5; /* Kurangi jarak antar baris */
+        font-size: 14px;
+    }
+
+    #project {
+        margin-bottom: 10px;
+    }
+
+    #project .project{
+        width: 100%; /* Buat proyek dan keterampilan mengambil lebar penuh */
+        margin: 10px 0 ; /* Kurangi margin antar elemen */
+    }
+
+    #project h2,
+    #skill h2 {
+        font-size: 24px; /* Ukuran font lebih kecil */
+        text-align: center;
+    }
+
+    #project h3{
+        font-size: 18px; /* Ukuran font lebih kecil */
+    }
+
+    #skill h3 {
+        font-size: 14px;
+    }
+
+    #project img{
+        max-width: 80%; /* Ukuran gambar lebih besar */
+        margin: 0 auto; /* Pusatkan gambar */
+    }
+
+    #skill img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    #contact {
+        padding: 1rem;
+    }
+
+    #contact a {
+        font-size: 12px;
+    }
+
+    .cv-button {
+        width: 30%; /* Buat tombol mengambil lebar penuh */
+        font-size: 16px; /* Ukuran font lebih kecil */
+        height: 50px; /* Kurangi tinggi tombol */
+    }
+
+    .cercle {
+        width: 50%; /* Lebar lebih kecil untuk gambar bulat */
+        max-width: 200px; /* Kurangi ukuran maksimum */
+        margin: 20px auto; /* Margin atas dan bawah lebih besar, tengah-tengah */
+    }
+
+    .social-logo {
+        width: 24px; /* Ukuran lebih kecil untuk logo sosial */
+    }
 }
 
-.section a:hover {
-    text-decoration: underline;
-}
-
-@media only screen and (max-width:767px) {
-    /*css buat layar hp*/
-}
-
-.social-logo {
-    width: 30px; /* Lebar gambar logo */
-    height: auto; /* Tinggi gambar logo */
-    margin-right: none; /* Jarak antara logo dan teks */
-    vertical-align: middle; /* Menyelaraskan logo dengan teks */
+#
 }
